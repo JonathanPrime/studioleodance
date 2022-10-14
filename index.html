@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="css/bootstrap.min.css">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/fontawesome.min.css">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link rel="icon" type="image/x-icon" href="./icon.svg">
 </head>
 
@@ -59,28 +60,28 @@
    <!-- about section starts  -->
    <section class="about" id="about">
       <div class="content about-info">
-          <h3 class="own-script">Acerca de</h3>
-          <h3 class="title">Nosotros</h3>
-          <div class="icons">
-              <p><b>Studio Leo Dance</b> Somos una escuela de danza con experiencia en formación en el area de baile. 
-               Estamos comprometidos con la formación de nuestros alumnos forjando en ellos, 
+         <h3 class="own-script">Acerca de</h3>
+         <h3 class="title">Nosotros</h3>
+         <div class="icons">
+            <p><b>Studio Leo Dance</b> Somos una escuela de danza con experiencia en formación en el area de baile.
+               Estamos comprometidos con la formación de nuestros alumnos forjando en ellos,
                responsabilidad, autoestima, manejo del tiempo libre y amor por la actividad física.</p>
-          </div>
-          <a href="https://www.facebook.com/studioleodance" target="_blank"> <i
+         </div>
+         <a href="https://www.facebook.com/studioleodance" target="_blank"> <i
                class="fab fa-facebook-f btn-contact"></i></a>
          <a href="https://instagram.com/studioleodance?igshid=YmMyMTA2M2Y=" target="_blank"> <i
                class="fab fa-instagram btn-contact"></i>
          </a>
       </div>
       <div class="content about-img">
-          <div class="row img-group">
-              <div class="col-md-12 col-sm-12 col-12 card__group image img-group-1">
-                  <img src="./imgs/about-img.png" alt="">
-              </div>
-          </div>
+         <div class="row img-group">
+            <div class="col-md-12 col-sm-12 col-12 card__group image img-group-1">
+               <img src="./imgs/about-img.png" alt="">
+            </div>
+         </div>
       </div>
-  </section>
-  <!-- about section ends -->
+   </section>
+   <!-- about section ends -->
 
    <div id="classes" class="layout_padding">
       <div class="container">
@@ -224,8 +225,7 @@
                            <i class="fas fa-envelope"></i>
                            <h3>Email:</h3>
                            <p>njlove@gmail.com</p>
-                           <a href="mailto:njlove@gmail.com?" target="_blank"
-                              class="btn btn-contact">Enviar
+                           <a href="mailto:njlove@gmail.com?" target="_blank" class="btn btn-contact">Enviar
                               correo</a>
                         </div>
                         <div class="icons">
@@ -275,8 +275,7 @@
 
          <div class="box col-xl-4 col-lg-4 col-xs-12 col-sm-4">
             <h3>Síguenos</h3>
-            <a href="https://www.facebook.com/studioleodance" target="_blank"> <i
-                  class="fab fa-facebook-f"></i>
+            <a href="https://www.facebook.com/studioleodance" target="_blank"> <i class="fab fa-facebook-f"></i>
                Facebook </a>
             <a href="https://instagram.com/studioleodance?igshid=YmMyMTA2M2Y=" target="_blank"> <i
                   class="fab fa-instagram"></i>
@@ -289,8 +288,36 @@
          </a> Todos los derechos reservados. </p>
 
    </section>
+   <!-- loader  -->
+   <div class="loader-container">
+      <img src="./imgs/loader.gif" alt="">
+  </div>
+
+   <!-- WHATSAPP -->
+   <div class="nav-bottom">
+      <div class="popup-whatsapp fadeIn">
+         <div class="content-whatsapp -top"><button type="button" class="closePopup">
+               <i class="material-icons icon-font-color">close</i>
+            </button>
+            <p>Hola 🤩, ¡Puedes contáctarnos por nuestro canal de Whatsapp!.</p>
+         </div>
+         <div class="content-whatsapp -bottom">
+            <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+            <button class="send-msPopup" id="send-btn" type="button">
+               <i class="material-icons icon-font-color--black">send</i>
+            </button>
+         </div>
+      </div>
+      <button type="button" id="whats-openPopup" class="whatsapp-button">
+         <img class="icon-whatsapp" src="https://cdn-icons-png.flaticon.com/512/134/134937.png">
+      </button>
+      <div class="circle-anime"></div>
+   </div>
+   <!-- CLOSE WHATSAPP -->
+
    <script src="js/jquery-3.3.1.min.js"></script>
    <script src="js/bootstrap.min.js"></script>
+
    <script>
       $(function () {
          'use strict';
@@ -312,6 +339,7 @@
          });
       })
    </script>
+   <script src="./js/main.js"></script>
 </body>
 
 </html>
